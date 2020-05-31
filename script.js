@@ -18,23 +18,6 @@ function score() {
   var q17 = document.forms.form.q17.value;
   var q18 = document.forms.form.q18.value;
   var q19 = document.forms.form.q19.value;
-  var q20 = document.forms.form.q20.value;
-  var q21 = document.forms.form.q21.value;
-  var q22 = document.forms.form.q22.value;
-  var q23 = document.forms.form.q23.value;
-  var q24 = document.forms.form.q24.value;
-  var q25 = document.forms.form.q25.value;
-  var q26 = document.forms.form.q26.value;
-  var q27 = document.forms.form.q27.value;
-  var q28 = document.forms.form.q28.value;
-  var q29 = document.forms.form.q29.value;
-  var q30 = document.forms.form.q30.value;
-  var q31 = document.forms.form.q31.value;
-  var q32 = document.forms.form.q32.value;
-  var q33 = document.forms.form.q33.value;
-  var q34 = document.forms.form.q34.value;
-  var q35 = document.forms.form.q35.value;
-
 
   var questions = [
     q1,
@@ -55,23 +38,7 @@ function score() {
     q16,
     q17,
     q18,
-    q19,
-    q20,
-    q21,
-    q22,
-    q23,
-    q24,
-    q25,
-    q26,
-    q27,
-    q28,
-    q29,
-    q30,
-    q31,
-    q32,
-    q33,
-    q34,
-    q35
+    q19
   ];//ultima no lleva coma
 
   var answers = [
@@ -93,27 +60,11 @@ function score() {
     "c", //16
     "c", //17
     "a", //18
-    "b", //19
-    "c", //20
-    "b", //21
-    "c", //22
-    "c", //23
-    "c", //24
-    "a", //25
-    "b", //26
-    "a", //27
-    "a", //28
-    "c", //29
-    "c", //30
-    "b", //31
-    "d", //32
-    "d", //33
-    "d", //34
-    "d" //35
+    "b" //19
   ];//ultima no lleva coma
 
   var points = 0;
-  var total = 35;
+  var total = 19;
 
   for (var i = 0; i < total; i++) {
     if (questions[i] === answers[i]) {
@@ -123,9 +74,6 @@ function score() {
 
   var q = document.getElementById("rada");
 
-  q.style.fontSize = "20px";
-  q.style.textAlign = "center";
-  q.style.color = "yellow";
   q.innerHTML = "Obtuviste " + points + " puntos de " + total;
 
   return false;
