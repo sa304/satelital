@@ -33,7 +33,6 @@ function score() {
   var q32 = document.forms.form.q32.value;
   var q33 = document.forms.form.q33.value;
   var q34 = document.forms.form.q34.value;
-  var q35 = document.forms.form.q35.value;
 
   var questions = [
     q1,
@@ -69,8 +68,7 @@ function score() {
     q31,
     q32,
     q33,
-    q34,
-    q35
+    q34
   ];//ultima no lleva coma
 
   var answers = [
@@ -84,35 +82,34 @@ function score() {
     "d", //8
     "c", //9
     "a", //10
-    "a", //11
-    "b", //12
-    "a", //13
-    "e", //14
-    "b", //15
-    "d", //16
-    "c", //17
+    "b", //11
+    "a", //12
+    "e", //13
+    "b", //14
+    "d", //15
+    "c", //16
+    "d", //17
     "d", //18
     "d", //19
-    "d", //20
-    "c", //21
-    "a", //22
-    "b", //23
-    "d", //24
-    "f", //25
-    "d", //26
-    "a", //27
-    "b", //28
+    "c", //20
+    "a", //21
+    "b", //22
+    "d", //23
+    "f", //24
+    "d", //25
+    "a", //26
+    "b", //27
+    "a", //28
     "a", //29
-    "a", //30
-    "b", //31
-    "c", //32
-    "a", //33
-    "b", //34
-    "c", //35
+    "b", //30
+    "c", //31
+    "a", //32
+    "b", //33
+    "c" //34
   ];//ultima no lleva coma
 
   var points = 0;
-  var total = 35;
+  var total = 34;
 
   for (var i = 0; i < total; i++) {
     if (questions[i] === answers[i]) {
